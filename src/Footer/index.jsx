@@ -1,17 +1,32 @@
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 
 export default function Home() {
+    
     return(
+        
     <div>
         <h1>Home Page</h1>
-            <ol  type="site">
-                <ul>
-                <Link to='/Listaproduto'>ListaProdutos</Link>
-                </ul>
-                <ul>
-                <Link to='/Header'>Header</Link>
-                </ul>
-                </ol>
+        <Carousel
+                infiniteLoop
+                useKeyboardArrows
+                autoPlay
+                showArrows={true}
+                showStatus={false}
+                showThumbs={false}
+                dynamicHeight>
+                <div>
+                    <div id='carro'>
+                    <img id='testeimg' src='./src/img/2.png'/>
+                    </div>
+                    <div id='carro'>
+                    <img id='testeimg' src='./src/img/2.png'/>
+                    </div>
+                </div>
+      
+            </Carousel>
     </div>
     )
 }

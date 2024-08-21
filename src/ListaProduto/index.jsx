@@ -6,27 +6,38 @@ const [listaProdutos, setProdutos] = useState([
       { id: 2, nome: 'Manwa', preco: 'R$ 80,00' },
       { id: 3, nome: 'Anime', preco: 'R$ 50,00' }
     ]);
-    const [listaPedidos, setPedidos] = useState([
-    ]);
+    const [listaPedidos, setPedidos] = useState([ ]);
 
+    const [id2, setid] = useState(0)
     const adicionarProdutoPedido = (produto) => {  
-        setPedidos([...listaPedidos, produto]);
+        setPedidos([...listaPedidos, {prod: produto , ID: id2}]);
+        setid(id2 + 1)
     }
     console.table(listaPedidos);
-    const removeritem = (id) => {  
-        let listaAux = listaPedidos.filter((pedido)=> pedido.id !== id);
+    const removeritem = (ID) => {  
+        let listaAux = listaPedidos.filter((pedido)=> pedido.ID !== ID);
         setPedidos(listaAux)
     }
     console.table(listaPedidos);
     return (
         <div className="bloco-principal" >
-            <div className="bloco-produtos">
+            <h1>Produtos</h1>
+            <div id="bloco-produtos" className="bloco-produtos">
                 {
                   listaProdutos.map((produto)=> 
                       <div key={produto.id}>
                              <img src={produto.imagem}/>
+                             <td>
+                             {produto.id}
+                             </td>
+                             <td>
+                                {produto.nome}
+                             </td>
+                             <td>
+                                {produto.preco}
+                             </td>
                             <p> { produto.item} </p>
-                            <button onClick={() => adicionarProdutoPedido(produto)}>
+                            <button id="bocor" onClick={() => adicionarProdutoPedido(produto)}>
                             Adicionar aos Favoritos
                             </button>
                       </div>
@@ -38,7 +49,7 @@ const [listaProdutos, setProdutos] = useState([
                           {listaPedidos.map((pedido, index) => 
                               <div key={index}>
                                   <td>
-                                    {pedido.item}
+                                    {pedido.nome}
                                     </td>
                                   <td>
                                      {pedido.preco}

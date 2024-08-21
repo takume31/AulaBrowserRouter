@@ -1,0 +1,14 @@
+#testeimg{
+    width: 100%;
+}
+#carro{
+    scrollbar-width: flex;
+}
+/*Listar Produtos*/
+#bocor{
+    background-color: red;
+}
+#bloco-produtos{
+    border-style: solid;
+    border-color: black;
+}
