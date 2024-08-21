@@ -14,15 +14,15 @@ export default function Home() {
                 useKeyboardArrows
                 autoPlay
                 showArrows={true}
-                showStatus={false}
+                showStatus={false}  
                 showThumbs={false}
                 dynamicHeight>
                 <div>
                     <div id='carro'>
-                    <img id='testeimg' src='./src/img/2.png'/>
+                    <img id='testeimg' src='../lista/CarrocelAnime/image.png'/>
                     </div>
                     <div id='carro'>
-                    <img id='testeimg' src='./src/img/2.png'/>
+                    <img id='testeimg' src='../lista/CarrocelAnime/image.png'/>
                     </div>
                 </div>
       

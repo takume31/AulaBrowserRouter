@@ -2,64 +2,62 @@ import { useState } from "react";
 
 export default function ListaProduto() {
 const [listaProdutos, setProdutos] = useState([
-      { id: 1, nome: 'Manga', preco: 'R$ 70,00' },
-      { id: 2, nome: 'Manwa', preco: 'R$ 80,00' },
-      { id: 3, nome: 'Anime', preco: 'R$ 50,00' }
+      { id: 111, nome: 'Kimetsu no yaba', preco: 'R$ 70,99', imagem: '/src/lista/imgmanga/1.png' },
+      { id: 222, nome: 'class-no-daikirai-na-joshi-to-kekkon-suru-koto-ni-natta', preco: 'R$ 80,99', imagem: '/src/lista/imgmanga/2.png' },
+      { id: 333, nome: 'Classroom of the Elite', preco: 'R$ 50,99', imagem: '/src/lista/imgmanga/3.png' },
+      { id: 444, nome: 'Pokemon', preco: 'R$ 55,99', imagem: '/src/lista/imgmanga/4.png' },
+      { id: 555, nome: 'niwatori fighter', preco: 'R$ 38,99', imagem: '/src/lista/imgmanga/5.png' },
+      { id: 666, nome: 'Naruto', preco: 'R$ 62,99', imagem: '/src/lista/imgmanga/6.png' },
+      { id: 777, nome: 'Dragão ball', preco: 'R$ 91,99', imagem: '/src/lista/imgmanga/7.png' }
     ]);
-    const [listaPedidos, setPedidos] = useState([ ]);
+    const [listaPedidos, setPedidos] = useState([
+    ]);
 
-    const [id2, setid] = useState(0)
     const adicionarProdutoPedido = (produto) => {  
-        setPedidos([...listaPedidos, {prod: produto , ID: id2}]);
-        setid(id2 + 1)
+        setPedidos([...listaPedidos, produto]);
     }
     console.table(listaPedidos);
-    const removeritem = (ID) => {  
-        let listaAux = listaPedidos.filter((pedido)=> pedido.ID !== ID);
+    const removeritem = (id) => {  
+        let listaAux = listaPedidos.filter((pedido)=> pedido.id !== id);
         setPedidos(listaAux)
     }
+    
     console.table(listaPedidos);
     return (
         <div className="bloco-principal" >
             <h1>Produtos</h1>
+            <br/>
+            <div className="blo2">
             <div id="bloco-produtos" className="bloco-produtos">
                 {
                   listaProdutos.map((produto)=> 
                       <div key={produto.id}>
-                             <img src={produto.imagem}/>
+                    <div className="card">
+                             <img className="listaimg" src={produto.imagem}/>
                              <td>
-                             {produto.id}
                              </td>
-                             <td>
-                                {produto.nome}
-                             </td>
-                             <td>
-                                {produto.preco}
-                             </td>
-                            <p> { produto.item} </p>
-                            <button id="bocor" onClick={() => adicionarProdutoPedido(produto)}>
+                             <div className="meio">
+                             <p> id: {produto.id}</p>
+                             <p> Produto: {produto.nome}</p>
+                             <p> Valor: {produto.preco}</p>
+                            <button className="bocor" onClick={() => adicionarProdutoPedido(produto)}>
                             Adicionar aos Favoritos
                             </button>
+                            </div>
+                      </div>
                       </div>
                   )}
-                  
+                  </div>
                       </div>
                       <div className="bloco-pedidos">
-                          <p>Meus Favoritos</p>
+                          <p className="favo">Meus Favoritos</p>
                           {listaPedidos.map((pedido, index) => 
                               <div key={index}>
-                                  <td>
                                     {pedido.nome}
-                                    </td>
-                                  <td>
                                      {pedido.preco}
-                                     </td>
-                              <td>
-                                <button onClick={() => removeritem(pedido.id)}>Remover</button>
-                              </td>
+                                <button className="bocor" onClick={() => removeritem(pedido.id)}>Remover</button>
                               </div>
                           )}
-
 
                       </div>
                   </div>           

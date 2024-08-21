@@ -1,14 +1,50 @@
-#testeimg{
+
+#carro{
     width: 100%;
 }
-#carro{
-    scrollbar-width: flex;
+#testimg{
+    width: 100%;
 }
 /*Listar Produtos*/
-#bocor{
-    background-color: red;
+.bloco-principal{
+    text-align: center;
 }
-#bloco-produtos{
+.blo2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 250px;
+    height: 550px;
+    border-radius: 5%;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
     border-style: solid;
     border-color: black;
+}
+.meio{
+  text-align: center;
+}
+.bocor{
+    border-radius: 30%;
+    background-color: red;
+}
+.listaimg{
+    width: 250px;
+    height: 400px;
+}
+.bloco-produtos{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  align-items: center;
+    
+}
+.favo{
+    border-radius: 10%;
+    background-color: red;
 }
