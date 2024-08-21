@@ -17,14 +17,15 @@ export default function Home() {
                 showStatus={false}  
                 showThumbs={false}
                 dynamicHeight>
-                <div>
                     <div id='carro'>
-                    <img id='testeimg' src='../lista/CarrocelAnime/image.png'/>
+                    <img id='testeimg' src='public/lista/carrocelAnime/image copy.png'/>
                     </div>
                     <div id='carro'>
-                    <img id='testeimg' src='../lista/CarrocelAnime/image.png'/>
+                    <img id='testeimg' src='public/lista/carrocelAnime/image copy.png'/>
                     </div>
-                </div>
+                    <div id='carro'>
+                    <img id='testeimg' src='public/lista/carrocelAnime/image copy.png'/>
+                    </div>
       
             </Carousel>
     </div>

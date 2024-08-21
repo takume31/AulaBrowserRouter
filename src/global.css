@@ -4,8 +4,13 @@
 }
 #testimg{
     width: 100%;
+    height: 500px;
 }
 /*Listar Produtos*/
+.pro{
+    background-color: red;
+    border-style: solid;
+}
 .bloco-principal{
     text-align: center;
 }
@@ -22,15 +27,9 @@
     padding-bottom: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
+    background-color: red;
     border-style: solid;
     border-color: black;
-}
-.meio{
-  text-align: center;
-}
-.bocor{
-    border-radius: 30%;
-    background-color: red;
 }
 .listaimg{
     width: 250px;
@@ -43,8 +42,4 @@
     justify-content: center;
   align-items: center;
     
-}
-.favo{
-    border-radius: 10%;
-    background-color: red;
 }

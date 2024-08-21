@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Route element={<Inicio/>} path='/'/>
     <Route element={<Home/>} path='/Home'/>
     <Route element={<ListarProduto/>} path='/ListaProduto'/>
-    <Route element={<Header/>} path='/Header'/>
+    <Route element={<Header/>} path='/Ofertas'/>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>,
