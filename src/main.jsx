@@ -5,6 +5,9 @@ import ListarProduto from './ListaProduto/index'
 import Home from './Footer/index'
 import Header from './Header/index'
 import Inicio from './paginaini'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './Home/index'
+import Oferta from './Oferta/index'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
