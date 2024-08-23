@@ -1,10 +1,51 @@
-
-#carro{
-    width: 100%;
+/*Cabeçario*/
+body{
+background-color: gray;
+    margin: 0%;
+}
+.translated-ltr{
+    margin: 0%;
+    padding: 0%;
+}
+.titulo{
+    margin-top: 1.6%;
+    color: rgb(255, 255, 255);
+}
+.cabe{
+    padding-left: 2%;
+    border: 10px;
+    border-style: solid;
+    border-color: cyan;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+}
+.cabeimg{
+    padding: 15px;
+    width: 100px;
+    height: 40px;
+}
+.pag{
+    text-align: center;
+}
+.tag{
+    margin-left: 5%;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 5px 40px;
+}
+.tese{
+    display: flex;
+}
+.carroce{
+    margin-left: 14%;
+    width: 75%;
 }
 #testimg{
     width: 100%;
-    height: 500px;
+    height: 100%;
 }
 /*Listar Produtos*/
 .pro{
@@ -27,7 +68,7 @@
     padding-bottom: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
-    background-color: red;
+    background-color: rgb(255, 0, 0);
     border-style: solid;
     border-color: black;
 }

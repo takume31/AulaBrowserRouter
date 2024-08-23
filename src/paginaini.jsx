@@ -7,10 +7,11 @@ export default function Homepage() {
                 
                 <h3><Link to='/Listaproduto'>ListaProdutos</Link></h3>
                 
-                <h3><Link to='/Ofertas'>Header</Link></h3>
+                <h3><Link to='/Fotter'>Footerw</Link></h3>
                 
                 <h3><Link to='/Home'>Home</Link></h3>
                 
+                <h3><Link to='/Ofertas'>Ofertas</Link></h3>
     </>
     )
 }

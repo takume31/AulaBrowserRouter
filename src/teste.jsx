@@ -1,8 +1,3 @@
-import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-
-
 export default function Home() {
     
     return(
@@ -17,7 +12,6 @@ export default function Home() {
         </div>
     </div>
         <h1 className='pag'>Home Page</h1>
-        <div className='carrotodo'>
         <Carousel className='carroce'
                 infiniteLoop
                 useKeyboardArrows
@@ -37,7 +31,6 @@ export default function Home() {
                     </div>
       
             </Carousel>
-            </div>
     </div>
     )
-}
+}   
