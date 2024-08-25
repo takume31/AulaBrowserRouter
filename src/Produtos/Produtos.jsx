@@ -3,6 +3,7 @@ import ListaProduto from "../ListaProduto";
 import Header from "../Header";
 import Carousel from "../Carrossel";
 import Footer from "../Footer";
+import Criador from '../Criador/index'
 
 export default function Produtos(){
     const [produtosGerais] = useState([
@@ -35,6 +36,7 @@ export default function Produtos(){
         <br/>
         <br/>
         <ListaProduto lista={produtosGerais}/>
+        <Criador/>
         <Footer/>
         </>
     )

@@ -5,12 +5,11 @@ export default function Header(){
         <div>
         <div className='cabeca'> 
         <div className='cabe'>
-        <img className='cabeimg' src='../../public/lista/imgcabe/image.png'/>
+        <Link to='/'><img className='cabeimg' src='../../public/lista/imgcabe/image.png'/></Link>
         <div className='tese'>
             
            <nav class="cabeçalho">
      <div class="navbar">
-       <p>logo</p>
    <button class="botao">Menu</button>
      </div>
      <div>

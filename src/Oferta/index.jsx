@@ -3,7 +3,7 @@ import Header  from "../Header/index";
 import ListaProduto from "../ListaProduto";
 import Carousel from "../Carrossel/index";
 import Footer from "../Footer";
-
+import Criador from '../Criador/index'
 export default function Produto() {
 const [listaProdutos] = useState([
   { id: 111, nome: 'Kimetsu no Yaiba', preco: 'R$ 70,99', imagem: '/public/lista/imgmanga/1.png', Data: '14/09/2023', desconto: "40%", nota:'7.8/10'},
@@ -28,6 +28,7 @@ const [listaProdutos] = useState([
           <Carousel/>
           <br/>
             <ListaProduto lista={listaProdutos}/>
+            <Criador/>
             <Footer/>
   </>
        );
