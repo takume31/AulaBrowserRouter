@@ -1,12 +1,27 @@
-/*Cabeçario*/
 body{
 background-color: gray;
     margin: 0%;
 }
-.translated-ltr{
-    margin: 0%;
-    padding: 0%;
-}
+/*Cabeçario*/
+
+.navbar{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .botao{ 
+    display: none;
+    color: #ffffff;
+    background-color: transparent;
+    border: none; 
+    cursor: pointer;
+  
+  }
+  .navbar-lista{
+    margin-top: 0%;
+    display: flex;
+  }
+  
 .titulo{
     text-align: center;
     width: 150px;
@@ -33,7 +48,16 @@ background-color: gray;
 .pag{
     text-align: center;
 }
+
+a:link{
+  text-decoration: none;
+}
+a:hover {
+    color: #000000;
+    text-decoration: underline; 
+  }
 .tag{
+    
     width: 75px;
     text-align: center;
     margin-left: 50%;
@@ -45,14 +69,10 @@ background-color: gray;
     padding: 5px 40px;
 }
 .teste1{
-margin: 0%;
 margin-top: 2%;
 }
 .teste2, .teste3, .teste4{
     margin-left: 20%;
-}
-.tese{
-    display: flex;
 }
 .carrotodo{
     display: flex;
@@ -140,3 +160,49 @@ footer{
     margin-right: 0%;
     display: flex;
 }
+@media screen and (max-width: 700px) {
+  /*Cabeçario*/
+  .cabeimg{
+    width: 40px;
+    height: 20px;
+  }
+.tag{
+    width: 60px;
+    font-size: 20px;
+    margin-left: 10%;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 5px 40px;
+}  
+.botao{  
+    margin-left: 150%;
+    display: flex;
+  }
+
+  .navbar-lista{
+    display: none;
+    flex-direction: column;
+          position: absolute;
+          top: 40px;
+          left: 0;
+          background-color: black;
+          width: 170px;
+
+  }
+  .carroce{
+    width: 100%;
+  }
+   .navbar-lista.show {
+    display: flex;
+  }
+    .logorodape{
+      text-align: center;
+      width: 100%;
+    }
+} 
+/*Lista*/
+
+/*Rodapé*/
