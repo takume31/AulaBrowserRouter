@@ -3,31 +3,6 @@ background-color: gray;
     margin: 0%;
 }
 /*Cabeçario*/
-.cria{
-    margin: 0px;
-    color: transparent;
-    width: 0px;
-    height: 0px;
-}
-.navbar{
-    display: flex;
-    align-items: center;
-    margin-top: 18px;
-    margin-left: 120px;
-  }
-  .botao{ 
-    display: none;
-    color: #ffffff;
-    background-color: transparent;
-    border: none; 
-    cursor: pointer;
-  
-  }
-  .navbar-lista{
-    margin-top: 0%;
-    display: flex;
-  }
-  
 .titulo{
     text-align: center;
     width: 150px;
@@ -35,10 +10,11 @@ background-color: gray;
     border-radius: 50%;
     border: rgb(255, 255, 255) 2px solid;
     margin-left: 5%;
-    margin-top: 7%;
+    margin-top: 0%;
     color: rgb(255, 255, 255);
 }
 .cabe{
+    display: flex;
     padding-left: 2%;
     padding-top: 1%;
     padding-bottom: 0%;
@@ -46,10 +22,9 @@ background-color: gray;
     border-style: solid;
     border-color: cyan;
     background-color: rgb(0, 0, 0);
-    display: flex;
 }
 .cabeimg{
-    padding-top: 10%;
+    padding-top: 15%;
     width: 90px;
     height: 40px;
 }
@@ -67,6 +42,7 @@ a:hover {
 .tag{
     width: 75px;
     text-align: center;
+    margin-top: 0%;
     margin-left: 50%;
     border-style: solid;
     border-radius: 50%;
@@ -75,12 +51,18 @@ a:hover {
     color: rgb(255, 255, 255);
     padding: 5px 40px;
 }
+.tese{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+}
 .teste1{
-margin-top: 2%;
+margin-left: 20%;
 }
 .teste2, .teste3, .teste4{
     margin-left: 20%;
 }
+/*Listar Produtos*/
 .carrotodo{
     display: flex;
     justify-content: center;
@@ -88,7 +70,6 @@ margin-top: 2%;
 .carroce{ 
     width: 75%;
 }
-/*Listar Produtos*/
 .pro{
     text-align: center;
     margin-top: 0%;
@@ -147,6 +128,10 @@ footer{
     background-color: rgb(0, 0, 0);
     border: cyan 15px solid;
 }
+.compartilhar{
+    margin-top: 5%;
+    margin-left: 70%;
+}
 .pala{
     margin-left: 1%;
     color:white;
@@ -165,93 +150,4 @@ footer{
 .footer{
     margin-right: 0%;
     display: flex;
-}
-@media screen and (max-width: 700px) {
-  /*Cabeçario*/
-  .cabe{
-    height: 50px;
-    padding-bottom: 0%;
-  }
-  .cabeimg{
-    width: 40px;
-    padding-bottom: 0%;
-    height: 20px;
-  }
-.tag{
-    width: 60px;
-    font-size: 20px;
-    margin-left: 10%;
-    border-style: solid;
-    border-radius: 50%;
-    border-color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    padding: 5px 40px;
-}  
-.botao{  
-    margin-left: 250%;
-    display: flex;
-  }
-  .navbar-lista{
-    display: none;
-    flex-direction: column;
-          position: absolute;
-          top: 40px;
-          left: 0;
-          background-color: black;
-          width: 170px;
-
-  }
-  .carroce{
-    width: 100%;
-  }
-   .navbar-lista.show {
-    display: flex;
-  }
-    .logorodape{
-      text-align: center;
-      width: 100%;
-    }
-/*Lista*/
-
-.blo2{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.listaimg{
-    width: 125px;
-    height: 200px;
-}
-.meio{
-    font-size: 10px;
-}
-.adicionar{
-    font-size: 10px;
-}
-
-.card{
-    width: 125px;
-    height: 360px;
-}
-/*Rodapé*/
-.roda{
-    width: 30px;
-    margin-top: 45%;
-    margin-left: 50%;
-}
-footer{
-    display: flex;
-    margin-bottom: 0%;
-    height: auto;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
-/*separar*/
-.cria{
-    margin-bottom: 10%;
-}
 }

@@ -3,9 +3,8 @@ import Header  from "../Header/index";
 import ListaProduto from "../ListaProduto";
 import Carousel from "../Carrossel/index";
 import Footer from "../Footer";
-import Criador from '../Criador/index'
 
-export default function Produto() {
+export default function Produto() { 
 const [listaProdutos] = useState([
   { id: 111, nome: 'The Heroine Had an Affair with My Fiance', preco: 'R$ 70,99', imagem: '/public/lista/imgmanhwa/1.png', Data: '14/09/2023', desconto: "40%", nota:'7.8/10'},
   { id: 222, nome: 'Se você não souber o Romance, você Morrerá!', preco: 'R$ 80,99', imagem: '/public/lista/imgmanhwa/2.png', data: '01/12/2022', 
@@ -15,16 +14,15 @@ const [listaProdutos] = useState([
   { id: 555, nome: 'Transformando um Cachorro Louco em um Gentil Lorde!', preco: 'R$ 38,99', imagem: '/public/lista/imgmanhwa/5.png', data: '31/05/2004', desconto: "20%", nota:'5/10' },          
 ]);
 
-    return (
-        <>
-        <Header/>
-        <br/>
-        <h1 className='pro'>Manhwa</h1>
-          <Carousel/>
-          <br/>
-            <ListaProduto lista={listaProdutos}/>
-            <Criador/>
-            <Footer/>
-  </>
-       );
+return (
+  <>
+  <Header/>
+  <br/>
+  <h1 className='pro'>Manhwa</h1>
+    <Carousel/>
+    <br/>
+      <ListaProduto lista={listaProdutos}/>
+      <Footer/>
+</>
+ );
 }

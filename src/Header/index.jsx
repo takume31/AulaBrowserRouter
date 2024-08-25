@@ -8,12 +8,6 @@ export default function Header(){
         <Link to='/'><img className='cabeimg' src='../../public/lista/imgcabe/image.png'/></Link>
         <div className='tese'>
             
-           <nav class="cabeçalho">
-     <div class="navbar">
-   <button class="botao">Menu</button>
-     </div>
-     <div>
-        <ul class="navbar-lista">
         <div className="teste1">
         <Link to='/'><h3 className='titulo'>Animes Online</h3></Link>
         </div>
@@ -26,14 +20,9 @@ export default function Header(){
         <div className="teste4">
         <Link to='/Home'><h3 className='tag'>Manhwa</h3></Link>
         </div>
-     </ul>
-     </div>
-   </nav>
-   
+    </div>
+    </div>
         </div>
-    </div>
-    </div>
-        
         </div>
         
     )
