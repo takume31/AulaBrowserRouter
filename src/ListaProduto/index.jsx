@@ -4,10 +4,10 @@ export default function ListaProduto({lista}){
         <>
         <div className="bloco-principal" >
         <br/>
-        <div id="bloco-produtos" className="bloco-produtos">
+        <div className="bloco-produtos">
             
         <div className="blo2">
-                {
+                {    
                   lista.map((produto)=> 
                       <div key={produto.id}>
                     <div className="card">
@@ -15,11 +15,13 @@ export default function ListaProduto({lista}){
                              <td>
                              </td>
                              <div className="meio">
-                             <p> id: {produto.id}</p>
                              <p> Produto: {produto.nome}</p>
+                             <p> Desconto: {produto.desconto}</p>
                              <p> Valor: {produto.preco}</p>
+                             <p> Data: {produto.data}</p>
+                             <p> Nota: {produto.nota}</p>
                             </div>
-                            <button className="butico">Adicionar aos favoritos</button>
+                            <button className="adicionar">Adicionar aos favoritos</button>
                       </div>
                       </div>
                   )}

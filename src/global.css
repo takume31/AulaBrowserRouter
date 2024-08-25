@@ -54,13 +54,12 @@ margin-top: 2%;
 .tese{
     display: flex;
 }
-.carroce{
-    margin-left: 14%;
-    width: 75%;
+.carrotodo{
+    display: flex;
+    justify-content: center;
 }
-#testimg{
-    width: 50%;
-    height: 50%;
+.carroce{ 
+    width: 75%;
 }
 /*Listar Produtos*/
 .pro{
@@ -80,7 +79,7 @@ margin-top: 2%;
 }
 .card{
     width: 250px;
-    height: 570px;
+    height: 630px;
     border-radius: 5%;
     text-align: center;
     padding-bottom: 20px;
@@ -102,9 +101,42 @@ margin-top: 2%;
   align-items: center;
     
 }
-.butico{
+.adicionar{
     background-color: rgb(255, 255, 255);
     border: rgb(0, 0, 0) 2px solid;
     border-radius: 30%;
     padding: 5px;
+}
+.camin{
+    color: transparent;
+    width: 100%;
+}
+/*Rodapé*/
+footer{
+    height: 20%;
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    background-color: rgb(0, 0, 0);
+    border: cyan 15px solid;
+}
+.pala{
+    margin-left: 1%;
+    color:white;
+}
+.roda{
+    width: 40px;
+}
+.compar{
+    margin-top: 1%;
+    margin-left: 5%;
+}
+.compart{
+    margin-top: 1%;
+    margin-left: 1%;
+}
+.footer{
+    margin-right: 0%;
+    display: flex;
 }
