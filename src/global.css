@@ -1,5 +1,5 @@
 body{
-background-color: gray;
+background-color: rgb(0, 0, 0);
     margin: 0%;
 }
 /*Cabeçario*/
@@ -20,10 +20,11 @@ background-color: gray;
     padding-bottom: 0%;
     border: 10px;
     border-style: solid;
-    border-color: cyan;
+    border-color: rgb(255, 0, 0);
     background-color: rgb(0, 0, 0);
 }
 .cabeimg{
+    
     padding-top: 15%;
     width: 90px;
     height: 40px;
@@ -86,18 +87,19 @@ margin-left: 20%;
     justify-content: center;
 }
 .card{
-    width: 250px;
+    width: 250px;   
     height: 630px;
-    border-radius: 5%;
+    border-top-right-radius: 5%;
     text-align: center;
     padding-bottom: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
-    background-color: cyan;
+    background-color: rgb(255, 255, 255);
     border-style: solid;
     border-color: black;
 }
 .listaimg{
+    border-radius: 5%;
     width: 250px;
     height: 400px;
 }
@@ -126,7 +128,7 @@ footer{
     margin-top: 0%;
     margin-bottom: 0%;
     background-color: rgb(0, 0, 0);
-    border: cyan 15px solid;
+    border: rgb(255, 0, 0) 15px solid;
 }
 .compartilhar{
     margin-top: 5%;

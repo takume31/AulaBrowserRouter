@@ -14,13 +14,13 @@ export default function carousel(){
                 showThumbs={false}
                 dynamicHeight>
                     <div>
-                    <img src='public/lista/carrocelAnime/1.png'/>
+                    <img className='lampada' src='public/lista/carrocelAnime/1.png'/>
                     </div>
                     <div>
-                    <img src='public/lista/carrocelAnime/2.png'/>
+                    <img className='lampada' src='public/lista/carrocelAnime/2.png'/>
                     </div>
                     <div>
-                    <img src='public/lista/carrocelAnime/3.png'/>
+                    <img className='lampada' src='public/lista/carrocelAnime/3.png'/>
                     </div>
             </Carousel>
             </div>  
