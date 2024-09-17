@@ -1,5 +1,5 @@
 body{
-background-color: rgb(0, 0, 0);
+background-color: rgb(77, 46, 192);
     margin: 0%;
 }
 /*Cabeçario*/
@@ -7,21 +7,22 @@ background-color: rgb(0, 0, 0);
     text-align: center;
     width: 150px;
     height: 30px;
+    background-color: #000000;
     border-radius: 50%;
     border: rgb(255, 255, 255) 2px solid;
     margin-left: 5%;
     margin-top: 0%;
     color: rgb(255, 255, 255);
 }
-.cabe{
+.cabe{  
     display: flex;
     padding-left: 2%;
     padding-top: 1%;
     padding-bottom: 0%;
     border: 10px;
     border-style: solid;
-    border-color: rgb(255, 0, 0);
-    background-color: rgb(0, 0, 0);
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(66, 73, 161);
 }
 .cabeimg{
     
@@ -74,7 +75,7 @@ margin-left: 20%;
 .pro{
     text-align: center;
     margin-top: 0%;
-    background-color: red;
+    background-color: rgb(0, 229, 255);
     border-style: solid;
 }
 .bloco-principal{
@@ -94,7 +95,7 @@ margin-left: 20%;
     padding-bottom: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(13, 181, 253);
     border-style: solid;
     border-color: black;
 }
@@ -120,6 +121,13 @@ margin-left: 20%;
     color: transparent;
     width: 100%;
 }
+.lista{
+    text-align: center;
+}
+.cada{
+    display: flex;
+    justify-content: center;
+}
 /*Rodapé*/
 footer{
     height: 20%;
@@ -127,8 +135,8 @@ footer{
     margin-left: 0%;
     margin-top: 0%;
     margin-bottom: 0%;
-    background-color: rgb(0, 0, 0);
-    border: rgb(255, 0, 0) 15px solid;
+    background-color: rgba(47, 30, 131, 0.929);
+    border: rgb(255, 255, 255) 15px solid;
 }
 .compartilhar{
     margin-top: 5%;
@@ -148,7 +156,7 @@ footer{
 .compart{
     margin-top: 1%;
     margin-left: 1%;
-}
+}          
 .footer{
     margin-right: 0%;
     display: flex;
