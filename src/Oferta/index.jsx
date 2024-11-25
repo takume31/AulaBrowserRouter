@@ -28,6 +28,7 @@ const [listaProdutos] = useState([
           <br/>
             <ListaProduto lista={listaProdutos}/>
             <Footer/>
+            
   </>
        );
 }

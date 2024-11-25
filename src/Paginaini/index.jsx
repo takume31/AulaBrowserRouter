@@ -73,8 +73,8 @@ export default function Produtos(){
                 Listasalva.map((contato, index) =>
             <div key={index}>
                 <div className="lista">
-                <p>Gmail: {contato.Gmailsalvo}</p>
-                <p>senha: {contato.Senhasalvo}</p>
+                <p> Gmail: {contato.Gmailsalvo} </p>
+                <p> senha: {contato.Senhasalvo} </p>
                 </div>
                 </div>
             )}
